@@ -5,7 +5,6 @@
       "esModuleInterop": true,
       "isolatedModules": true,
       "module": "ESNext",
-      "types": ["vite"],
       "moduleResolution": "Node",
       "allowSyntheticDefaultImports": true,
       "paths": {

@@ -11,6 +11,11 @@ const config: UserConfig = {
          },
       },
    },
+   build: {
+      polyfillDynamicImport: true,
+      minify: 'esbuild',
+      assetsInlineLimit: 0
+   }
 };
 
 export default config;
