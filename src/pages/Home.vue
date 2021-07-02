@@ -6,6 +6,8 @@ import VButton from '/src/components/Button/index.vue';
  * and then
  * const count = ref(0);
  * but I used ref sugar here
+ *
+ * CHECK VITE.CONFIG.TS
  */
 ref: count = 0; // ref sugar
 </script>

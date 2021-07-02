@@ -1,12 +1,19 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+   name: 'MyButton'
+});
+</script>
+
 <script lang="ts" setup>
-import { defineProps } from 'vue';
 import type { PropType } from 'vue';
 
+// defineProps, defineEmits, defineExpose, withDefaults is globally available in vue 3 after release 3.1.3
 const props = defineProps({
    text: {
       required: true,
-      type: String as PropType<string>,
-   },
+      type: String as PropType<string>
+   }
 });
 </script>
 
