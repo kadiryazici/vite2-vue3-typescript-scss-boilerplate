@@ -1,5 +1,7 @@
 import { UserConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import autoprefixer from 'autoprefixer';
+
 const config: UserConfig = {
    plugins: [
       vue({
@@ -10,6 +12,9 @@ const config: UserConfig = {
       })
    ],
    css: {
+      postcss: {
+         plugins: [autoprefixer()]
+      },
       preprocessorOptions: {
          scss: {
             additionalData: `
@@ -20,7 +25,6 @@ const config: UserConfig = {
    },
    build: {
       polyfillDynamicImport: true,
-      minify: 'esbuild',
       assetsInlineLimit: 0
    }
 };

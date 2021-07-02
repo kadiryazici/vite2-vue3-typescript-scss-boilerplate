@@ -1,14 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { RouteRecordRaw } from 'vue-router';
 
-const router = createRouter({
-   history: createWebHistory(),
-   routes: [
-      {
-         path: '/',
-         name: 'Home',
-         component: () => import('/src/pages/Home.vue'),
-      },
-   ],
-});
-
-export default router;
+export const routes: RouteRecordRaw[] = [
+   {
+      path: '/',
+      name: 'Home',
+      component: () => import('/src/pages/Home.vue')
+   },
+   {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('/src/pages/404.vue')
+   }
+];

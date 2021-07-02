@@ -4,17 +4,20 @@
    "description": "vite2 starter app",
    "scripts": {
       "dev": "vite",
-      "build": "vite build"
+      "build": "vite build",
+      "typecheck": "vue-tsc --noEmit"
    },
    "dependencies": {
       "vue": "next",
       "vue-router": "next"
    },
    "devDependencies": {
-      "typescript": "latest",
       "@vitejs/plugin-vue": "latest",
       "@vue/compiler-sfc": "latest",
+      "autoprefixer": "^10.2.6",
       "sass": "latest",
-      "vite": "latest"
+      "typescript": "latest",
+      "vite": "latest",
+      "vue-tsc": "^0.2.0"
    }
 }

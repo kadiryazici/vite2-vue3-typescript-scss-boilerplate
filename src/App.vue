@@ -17,7 +17,7 @@ body,
    flex-flow: row nowrap;
    align-items: center;
    justify-content: center;
-   background-color: vars.$bgColor; // CHECK vite.config.ts
+   background-color: vars.$bgColor; // CHECK vite.config.ts line 21
 }
 
 * {
