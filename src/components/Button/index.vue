@@ -1,10 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
-   name: 'MyButton'
-});
-</script>
-
 <script lang="ts" setup>
 import type { PropType } from 'vue';
 

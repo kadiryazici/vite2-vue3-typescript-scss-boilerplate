@@ -14,7 +14,7 @@ ref: count = 0; // ref sugar
 
 <template>
    <div class="_home">
-      <VButton @click="count++" :text="`Clicked ${count} times`" />
+      <VButton @click="count++" :text="`Clicked ${count} times`"></VButton>
    </div>
 </template>
 
