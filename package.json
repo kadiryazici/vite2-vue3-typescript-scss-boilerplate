@@ -14,10 +14,10 @@
    "devDependencies": {
       "@vitejs/plugin-vue": "latest",
       "@vue/compiler-sfc": "latest",
-      "autoprefixer": "^10.2.6",
+      "autoprefixer": "latest",
       "sass": "latest",
       "typescript": "latest",
       "vite": "latest",
-      "vue-tsc": "^0.2.0"
+      "vue-tsc": "latest"
    }
 }
